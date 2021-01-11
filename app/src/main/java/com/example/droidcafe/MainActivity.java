@@ -1,5 +1,6 @@
 package com.example.droidcafe;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
      * and starts the OrderActivity activity.
      * @parammessage Message to display.
      */
-    public void showFoodOrder(String message) { displayToast(message);
+    public void showFoodOrder(String message){ displayToast(message);
+        Intent intent = new Intent(this,OrderActivity.class); startActivity(intent);
     }
 }
